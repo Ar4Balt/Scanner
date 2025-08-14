@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     "/Users/tunnikau.artur/Desktop/проекты/сканер/output/os_detect"
+relocations:     []
+...

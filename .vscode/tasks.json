@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build OS Detector",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-Wall",
+                "-Wextra",
+                "-g3",
+                "-std=c++17",
+                "-I${brewInclude}",
+                "${file}",
+                "-o",
+                "${workspaceFolder}/output/os_detect",
+                "-L${brewLib}",
+                "-ltins",
+                "-lpthread"
+            ],
+            "options": {
+                "env": {
+                    "brewInclude": "${env:BREW_INCLUDE}",
+                    "brewLib": "${env:BREW_LIB}"
+                }
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
