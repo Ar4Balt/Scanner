@@ -1,0 +1,15 @@
+# OS Detector Scanner (C++ + libtins)
+
+Простой многопоточный сканер, который определяет ОС удалённых хостов по TCP Window Size.
+
+## Возможности
+- Сканирование диапазона IP-адресов
+- Многопоточность (по умолчанию до 10 потоков)
+- Простое определение ОС (Windows / Linux / Solaris / Unknown)
+- Работа на macOS, Linux (требует `libtins`)
+
+## Установка
+
+### macOS
+```bash
+brew install libtins
