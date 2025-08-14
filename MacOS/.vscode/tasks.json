@@ -13,7 +13,7 @@
                 "-I${brewInclude}",
                 "${file}",
                 "-o",
-                "${workspaceFolder}/output/os_detect",
+                "${workspaceFolder}/MacOS/output/os_detect",
                 "-L${brewLib}",
                 "-ltins",
                 "-lpthread"

@@ -2,6 +2,18 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "(lldb) Запустить",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "/Users/tunnikau.artur/Desktop/проекты/сканер/build/Debug/outDebug",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "lldb"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "lldb",
       "request": "launch",
