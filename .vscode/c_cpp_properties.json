@@ -4,6 +4,7 @@
       "name": "macos-clang-arm64",
       "includePath": [
         "${workspaceFolder}/**",
+        "/opt/homebrew/opt/libtins/include/tins/tins.h",
         "/opt/homebrew/include",
         "/opt/homebrew/include/tins",
         "/opt/homebrew/opt/libtins",

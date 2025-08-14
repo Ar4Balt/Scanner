@@ -1,0 +1,26 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build os_detect",
+      "type": "shell",
+      "command": "clang++",
+      "args": [
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-I/opt/homebrew/include",
+        "${workspaceFolder}/MacOS/os_detect.cpp",
+        "-o",
+        "${workspaceFolder}/output/os_detect",
+        "-L/opt/homebrew/lib",
+        "-ltins",
+        "-lpthread",
+        "-Wl,-rpath,/opt/homebrew/lib"
+      ],
+      "group": { "kind": "build", "isDefault": true },
+      "presentation": { "echo": true, "reveal": "always", "panel": "shared" },
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}
